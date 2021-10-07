@@ -13,7 +13,7 @@ def purchases () :
     qty = int(input ('Enter the quantity of the products : \n'))
     price_unit= int(input('Enter the price for one product : \n'))
     total= price_unit * qty 
-    bal= int(input('Enter the balance if it has one : \n'))
+    bal= int(input('Enter the balance if it has one , 0 if it has not : \n'))
     total_paid= total - bal
     newRecord= date + ',' + name  + ','+ str(qty) + ',' + str(price_unit) + ',' + str( total) + ',' + str(bal) + ',' + str(total_paid) + '\n'
     file.write(str(newRecord))
@@ -29,7 +29,7 @@ def sales () :
     qty = int(input ('Enter the quantity of the products : \n'))
     price_unit= int(input('Enter the price for one product : \n'))
     total= price_unit * qty 
-    bal= int(input('Enter the balance if it has one : \n'))
+    bal= int(input('Enter the balance if it has one , 0 if it has not : \n'))
     total_received= total - bal
     newRecord= date + ',' + name  + ','+ str(qty) + ',' + str(price_unit) + ',' + str( total) + ',' + ',' + str(bal) + ',' + str(total_received) + '\n'
     file.write(str(newRecord))
